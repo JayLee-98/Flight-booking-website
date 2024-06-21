@@ -1,20 +1,30 @@
-import React from 'react';
-import { Home, Info, Lounge, Navbar, Search, Subscribe, Support, Travelers, Footer } from './Components';
+import React from "react";
+import {
+  Home,
+  Info,
+  Lounge,
+  Navbar,
+  Search,
+  Subscribe,
+  Support,
+  Travelers,
+  Footer,
+} from "./Components";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      {/* <Home />
-      <Search />
+      <Home />
+     {/*  <Search />
       <Support />
       <Info />
       <Lounge />
       <Travelers />
       <Subscribe />
-      <Footer />   */}    
+      <Footer /> */}
     </div>
-  )
-}
+  );
+};
 
 export default App;
