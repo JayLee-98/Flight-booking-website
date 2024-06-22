@@ -708,3 +708,149 @@ h2 {
     }
 }
 
+// MEDIA SCREEN styling======================================================
+@media screen and (min-width:480px) {
+    // Home section styling======================================================
+    .home {
+        padding-top: 12rem;
+    }
+
+    // Search section styling======================================================
+    .search {
+        .sectionContainer {
+            .searchInputs {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    // Travel section styling======================================================
+    .travelers {
+        .sectionContainer {
+            .travelersContainer {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    // Subscribe section styling======================================================
+    .subscribe {
+        .sectionContainer {
+            max-width: 80%;
+            margin: auto;
+
+            .inputDiv {
+                flex-direction: row;
+                padding: 0 .5rem;
+                border-radius: 3rem;
+            }
+        }
+    }
+
+    // Footer section styling======================================================
+    .footer {
+        .sectionContainer {
+        align-items: flex-start;
+        grid-template-columns: repeat(2,1fr);
+
+        .footerLinks {
+            justify-content: center;
+        }
+        }
+    }
+}
+
+@media screen and (min-width:570px) {
+   // Home section styling======================================================
+   .home {
+        .mainText {
+            width: 80%;
+        }
+
+        .homeImages {
+            .video {
+                border-radius: 15rem;
+            }
+
+            .plane {
+                position: absolute;
+                width: 95%;
+                top: -8%;
+            }
+        }
+    }
+
+    // Search section styling======================================================
+    .search {
+        .sectionContainer {
+            .btns {
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+        }
+    }
+
+    // Support section styling======================================================
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                .textDiv {
+                    margin-top: 2rem;
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+        }
+    }
+
+    // Info section styling======================================================
+    .info {
+        .infoContainer {
+            .titleDiv {
+                flex-direction: row;
+                h2 {
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+
+            .cardsDiv {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+
+    // Lounge section styling======================================================
+    .lounge {
+        .sectionContainer {
+            .textDiv {
+                .grids {
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+        }
+    }
+
+     // Subscribe section styling======================================================
+    .subscribe {
+        .sectionContainer {
+            .inputDiv {
+                justify-content: space-between;
+
+                .btn {
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+
+    // Footer section styling======================================================
+    .footer {
+        .sectionContainer {
+            padding-top: 2rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+

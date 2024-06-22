@@ -11,7 +11,7 @@ const Info = () => {
           <button className="btn">View All</button>
         </div>
 
-        <div className="cardsDiv  ">
+        <div className="cardsDiv flex">
 
           <div className="singleCard grid">
             <div className="iconDiv flex">
