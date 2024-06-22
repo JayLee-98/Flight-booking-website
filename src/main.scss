@@ -465,7 +465,7 @@ h2 {
 }
 
 // Lounge styling======================================================
-.lounge{
+.lounge {
     .sectionContainer{
         gap: 1.5rem;
 
@@ -496,7 +496,7 @@ h2 {
 }
 
 // Travelers styling======================================================
-.travelers{
+.travelers {
     .sectionContainer{
         text-align: center;
 
@@ -601,3 +601,35 @@ h2 {
         }
     }
 }
+
+// Subscribe styling======================================================
+.subscribe {
+    background: var(--SecondaryColor);
+
+    .sectionContainer{
+        text-align: center;
+        .inputDiv{
+            margin-top: 1rem;
+            flex-direction: column;
+            background: var(--whiteColor);
+            border-radius: 1rem;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem .5rem;
+
+                &:placeholder {
+                    font-size: 13px;
+                    opacity: .5;
+                }
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
