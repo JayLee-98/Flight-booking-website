@@ -227,6 +227,7 @@ h2 {
   align-items: center;
   position: relative;
   border-radius: 5rem;
+  z-index: 500;
 }
 .home .homeImages .videoDiv {
   width: 100%;
@@ -261,6 +262,7 @@ h2 {
   border-radius: 3rem;
   width: 80%;
   text-align: center;
+  cursor: pointer;
 }
 .search .sectionContainer .btns .singleBtn:hover {
   background: var(--PrimaryColor);
@@ -308,6 +310,9 @@ h2 {
 .search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
   font-size: 12px;
   opacity: 0.5;
+}
+.search .sectionContainer .searchInputs .btnBlock {
+  justify-content: center;
 }
 
 .support .sectionContainer .titlesDiv {
@@ -856,4 +861,51 @@ h2 {
   .search .sectionContainer .btns {
     width: 50%;
   }
+}
+@media screen and (min-width: 1106px) {
+  .subscribe .sectionContainer {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1332px) {
+  .navBar .navBarTwo .menu {
+    gap: 1rem;
+  }
+  .navBar .navBarTwo .menu .listItem {
+    padding: 0 1.5rem;
+    font-size: 14px;
+  }
+  .support .sectionContainer .infoDiv {
+    gap: 1rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv .singleInfo p {
+    max-width: 500px;
+  }
+  .subscribe .sectionContainer {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home .homeImages .plane {
+    width: 90%;
+    top: -110%;
+  }
+}
+::-moz-selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--PrimaryColor);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
