@@ -21,9 +21,10 @@ const Navbar = () => {
     if (window.scrollY >= 10) {
       addBg("navBarTwo navbar_With_Bg");
     } else {
-      addBg('navBarTwo')
+      addBg("navBarTwo");
     }
   };
+  window.addEventListener('scroll', addBgColor);
 
   return (
     <div className="navBar flex">
@@ -50,8 +51,9 @@ const Navbar = () => {
       </div>
 
       <div className={noBg}>
+
         <div className="logoDiv">
-          <img src={logo} className="logo" />
+          <img src={logo} className="Logo" />
         </div>
 
         <div className={active}>
@@ -76,12 +78,16 @@ const Navbar = () => {
           <button onClick={removeNavBar} className="btn flex btnOne">
             Contact
           </button>
-          <button className="btn flex btnTwo">Contact</button>
-
-          <div onClick={showNavBar} className="toggleIcon">
-            <CgMenuGridO className="icon" />
-          </div>
         </div>
+
+        <button className="btn flex btnTwo">
+          Contact
+        </button>
+
+        <div onClick={showNavBar} className="toggleIcon">
+          <CgMenuGridO className="icon" />
+        </div>
+
       </div>
     </div>
   );
