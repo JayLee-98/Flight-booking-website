@@ -1,4 +1,4 @@
-# Flight booking website (ongoing)
+# Flight booking website (ongoing) 
 ## Side project
 
 This project is a responsive website using React.
